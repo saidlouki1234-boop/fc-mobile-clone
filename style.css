@@ -1,0 +1,16 @@
+*{margin:0;padding:0;box-sizing:border-box;touch-action:none;user-select:none}
+body{background:#0a2a12;font-family:system-ui;overflow:hidden}
+#gameContainer{position:relative;width:100vw;height:100vh;max-width:500px;margin:0 auto;background:#1a5c2a;overflow:hidden}
+#gameCanvas{width:100%;height:100%;display:block;background: radial-gradient(#2e8a42, #1a5c2a);}
+#ui{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none}
+#scoreBoard{position:absolute;top:10px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,0.7);color:white;padding:8px 20px;border-radius:20px;display:flex;gap:15px;font-weight:bold;pointer-events:auto}
+#controls{position:absolute;bottom:0;width:100%;height:200px;display:flex;justify-content:space-between;align-items:flex-end;padding:20px;pointer-events:auto}
+#joystickBase{width:120px;height:120px;background:rgba(255,255,255,0.15);border-radius:50%;position:relative;border:2px solid rgba(255,255,255,0.3)}
+#joystickStick{width:60px;height:60px;background:rgba(255,255,255,0.8);border-radius:50%;position:absolute;top:30px;left:30px;transition:0.05s}
+.actionBtn{width:70px;height:70px;border-radius:50%;border:none;margin:5px;font-weight:bold;color:white;background:rgba(0,0,0,0.5);border:2px solid white}
+.actionBtn.shoot{background:#ff3b30;width:85px;height:85px}
+.actionBtn.sprint{background:#007aff}
+#buttons{display:flex;flex-direction:column;align-items:center}
+#startScreen{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);display:flex;flex-direction:column;justify-content:center;align-items:center;color:white;gap:15px;z-index:10}
+#startScreen h1{font-size:32px;letter-spacing:2px;color:#00ff88}
+#startScreen button{padding:15px 40px;font-size:18px;background:#00ff88;border:none;border-radius:30px;font-weight:bold;cursor:pointer}
