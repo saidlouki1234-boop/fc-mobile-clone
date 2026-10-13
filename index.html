@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>FC Mobile Clone</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="gameContainer">
+  <canvas id="gameCanvas"></canvas>
+  
+  <div id="ui">
+    <div id="scoreBoard">
+      <span id="teamA">أنت 0</span> - <span id="teamB">0 الخصم</span>
+      <div id="timer">90:00</div>
+    </div>
+    <div id="controls">
+      <div id="joystickArea">
+        <div id="joystickBase"><div id="joystickStick"></div></div>
+      </div>
+      <div id="buttons">
+        <button id="passBtn" class="actionBtn">تمريرة</button>
+        <button id="shootBtn" class="actionBtn shoot">تسديد</button>
+        <button id="sprintBtn" class="actionBtn sprint">ركض</button>
+      </div>
+    </div>
+  </div>
+  <div id="startScreen">
+    <h1>FC MOBILE CLONE</h1>
+    <p>لعبة كرة قدم - تحكم مثل FC 24 Mobile</p>
+    <button onclick="startGame()">ابدأ المباراة</button>
+    <small>اسحب الجوستيك للحركة - زر تسديد للهجوم</small>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
